@@ -44,6 +44,19 @@
   			<type>maven-plugin</type>
 		</dependency>
 	</dependencies>
+<distributionManagement>
+	<repository>
+		<id>deploymentRepo</id>
+		<name>maven--release</name>
+		<url>http://35.231.66.172:8081/repository/maven--release/</url>
+	</repository>
+ 
+	<snapshotRepository>
+		<id>deploymentRepo</id>
+		<name>maven--snapshot</name>
+		<url>http://35.231.66.172:8081/repository/maven--snapshot/</url>
+	</snapshotRepository>
+</distributionManagement>
 	
 
 	<build>
@@ -75,18 +88,5 @@
 		</plugins>
 	</build>
 
-<distributionManagement>
-	<repository>
-		<id>deploymentRepo</id>
-		<name>mavenrelease</name>
-		<url>http://35.231.66.172:8081/repository/mavenrelease/</url>
-	</repository>
- 
-	<snapshotRepository>
-		<id>deploymentRepo</id>
-		<name>mavensnapshot</name>
-		<url>http://35.231.66.172:8081/repository/mavensnapshot/</url>
-	</snapshotRepository>
-</distributionManagement>
 
 </project>
